@@ -3,7 +3,7 @@
 Generates twitter trends after analyzing stream and displays the top 10 hashtags related to a given search word in real time.
 Implementation of reservoir sampling to track popular twitter tags.
 
-Languages\Tools Used: Spark, Python
+Technologies Used: Spark, Python
 
 
 ## Execution :
