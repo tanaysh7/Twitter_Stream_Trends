@@ -4,6 +4,7 @@ Generates twitter trends after analyzing stream and displays the top 10 hashtags
 Implementation of reservoir sampling to track popular twitter tags.
 
 Technologies Used: Spark, Python
+Libraries Used : Tweepy, Pyspark 
 
 
 ## Execution :
