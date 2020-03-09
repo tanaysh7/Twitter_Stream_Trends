@@ -64,7 +64,6 @@ def add_to_sample(tweet):
     twt_length+=len(tweet.text)
     if(len(S)<K):
         S.append([i['text'] for i in tweet.entities.get('hashtags')])
-        #twt_length+=len(tweet.text) 
     else:
             s = int(random.random() * counter)
             if s < K:
@@ -73,8 +72,8 @@ def add_to_sample(tweet):
                 print 'Top 5 hot hashtags:' 
                 for i in top_hashtags(S):
                     print i[0].encode('utf-8')+' : '+str(i[1])
-                
-                print 'The average length of the twitter ' + str(float(twt_length)/counter)
+                moving_avg=float(twt_length)/counter
+                print 'The average length of the twitter ' + str(moving_avg)
                 print ' '
     
 
